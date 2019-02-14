@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="TureOrDare.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="setting">
+                <a data-link="people-area"><i class="fas fa-gamepad" ></i></a>
+                <a data-link="system-area"><i class="fas fa-cog" ></i></a>
+                <i class="fas fa-user-plus" id="add-people"></i>
+            </div>
+        </header>
+        <div class="area people-area">
+            <div class="new-people-example" hidden>
+                <div class="people">
+                    <a class="chose-sex"><i class="fas fa-male fa-lg"></i></a>
+                    <a class="chose-sex"><i class="fas fa-female fa-lg"></i></a>
+                    <input name="player-name" type="text">
+                    <input hidden name="player-sex" type="text">
+                    <a class="remove-sex"><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+            <div class="people">
+                <a class="chose-sex" data-sex="M"><i class="fas fa-male fa-lg"></i></a>
+                <a class="chose-sex" data-sex="F"><i class="fas fa-female fa-lg"></i></a>
+                <input name="player-name" type="text">
+                <input hidden name="player-sex" type="text">
+                <a style="visibility:hidden;"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+        <div class="area system-area">
+            <div class="question">
+                <i class="fas fa-question fa-lg"></i><input type="text" name="question"><a><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="adventure">
+                <i class="fas fa-running fa-lg"></i><input type="text" name="question"><a><i class="fas fa-plus"></i></a>
+            </div>
+        </div>
+    </body>
+    <script src="TureOrDare.js"></script>
+</html>
