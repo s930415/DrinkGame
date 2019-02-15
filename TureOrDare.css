@@ -1,3 +1,4 @@
+/* all around */
 body {
     background-color: black;
     min-width: 240px;
@@ -5,13 +6,11 @@ body {
     margin: 0;
     font-family: 'Noto Sans Kannada', sans-serif;
 } 
-input {
-    color: white;
-}
 header {
     background-color: rgba(255,255,255,0.5);
 }
-input[name=player-name] {
+input[type=text] {
+    color: white;
     height: 40px;
     background-color: black;
     border-width: 0px 0px 1px 0px;
@@ -22,13 +21,16 @@ input[name=player-name] {
     padding: auto;
     width: 150px;
 }
+
+i{
+    color: gainsboro;
+}
+
 .people{
     white-space: nowrap;
     margin: 10px auto;
 }
-i{
-    color: gainsboro;
-}
+
 .setting {
     text-align: right
 }
@@ -39,6 +41,6 @@ i{
     font-size: 1.6em;
     color: orange;
 }
-.people-area {
+.area {
     text-align: center;
 }
