@@ -13,22 +13,22 @@ function shake(){
         newdice.classList.add('fas');
         switch(point){
             case 1:
-                $('i')[i].classList.value ='fas fa-dice-one fa-3x';
+                $('i')[i].classList.value ='fas fa-dice-one fa-4x';
                 break;
             case 2:
-                $('i')[i].classList.value ='fas fa-dice-two fa-3x';
+                $('i')[i].classList.value ='fas fa-dice-two fa-4x';
                 break;
             case 3:
-                $('i')[i].classList.value ='fas fa-dice-three fa-3x';
+                $('i')[i].classList.value ='fas fa-dice-three fa-4x';
                 break;
             case 4:
-                $('i')[i].classList.value ='fas fa-dice-four fa-3x';
+                $('i')[i].classList.value ='fas fa-dice-four fa-4x';
                 break;
             case 5:
-                $('i')[i].classList.value ='fas fa-dice-five fa-3x';
+                $('i')[i].classList.value ='fas fa-dice-five fa-4x';
                 break;
             case 6:
-                $('i')[i].classList.value ='fas fa-dice-six fa-3x';
+                $('i')[i].classList.value ='fas fa-dice-six fa-4x';
                 break;
         }
     }
