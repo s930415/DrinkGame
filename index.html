@@ -39,26 +39,27 @@
             header{
                 background: #6C6C6C;
             }
+            .container-fluid{
+                padding: 0px;
+            }
             header > div{
                 background: #6C6C6C;
-                height: 50px;
-                line-height:50px;
+                line-height:60px;
+                text-align: center;
+                /*white-space:nowrap;*/
             }
-            header > div > a:hover{
-                box-shadow:4px 4px 12px 4px rgba(20%,20%,40%,0.5);
+            header > div >  div:hover{
+                font-size: 1.2em;
+                box-shadow:4px 4px 12px 4px rgba(0%,0%,0%,0.2);
+                transform: rotateY(360deg);
             }
-
+            header .logo{
+                font-size: 22px;
+            }
 		</style>
     </head>
     <body>
     <header class="container-fluid">
-        <div class="row no-gutters">
-            <a class="col-6">Drink Game</a>
-            <a class="col-1" rel="/club/club.html">
-                <i class="fas fa-beer"></i><a>Club</a>
-            </a>
-            <a class="col-1">Bar</a>
-        </div>
     </header>
 	<div class="row" hidden>
 		<div class="col-sm-2">
@@ -113,7 +114,7 @@
 		</div>
         </div>
         <script>
-            $('#header').load('common/header.html');
+            $('header').load('header.html');
         </script>
     </body>
 </html>
