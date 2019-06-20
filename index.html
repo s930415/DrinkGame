@@ -1,4 +1,4 @@
-<html>
+<html itemscope itemtype="http://schema.org/WebSite">
     <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,17 +33,37 @@
 		<style>
 			body {
                 font-family: 'Permanent Marker', cursive;
-				background : #393d3f;
+				background : white;
 				color : #393d3f;
 			}
+            header{
+                background: #6C6C6C;
+            }
+            header > div{
+                background: #6C6C6C;
+                height: 50px;
+                line-height:50px;
+            }
+            header > div > a:hover{
+                box-shadow:4px 4px 12px 4px rgba(20%,20%,40%,0.5);
+            }
+
 		</style>
     </head>
     <body>
-    <div id="header"></div>
-	<div class="row">
+    <header class="container-fluid">
+        <div class="row no-gutters">
+            <a class="col-6">Drink Game</a>
+            <a class="col-1" rel="/club/club.html">
+                <i class="fas fa-beer"></i><a>Club</a>
+            </a>
+            <a class="col-1">Bar</a>
+        </div>
+    </header>
+	<div class="row" hidden>
 		<div class="col-sm-2">
 			<div class="card">
-				<div class="card-header fas fa-dice fa-4x"></div>
+				<div class="card-header fas fa-dice fa-2x"></div>
 				<div class="card-body">
 					<h5 class="card-title">吹牛</h5>
 					<p class="card-text">開吹</p>
@@ -53,7 +73,7 @@
 		</div>
 		<div class="col-sm-2">
 			<div class="card">
-				<div class="card-header fas fa-crown fa-4x"></div>
+				<div class="card-header fas fa-crown fa-2x"></div>
 				<div class="card-body">
 					<h5 class="card-title ">真心大冒險</h5>
 					<p class="card-text">製作中</p>
@@ -63,7 +83,7 @@
 		</div>
 		<div class="col-sm-2">
 			<div class="card">
-				<div class="card-header fas fa-beer fa-4x"></div>
+				<div class="card-header fas fa-beer fa-2x"></div>
 				<div class="card-body">
 					<h5 class="card-title">酒吧</h5>
 					<p class="card-text">製作中</p>
@@ -73,7 +93,7 @@
 		</div>
 		<div class="col-sm-2">
 			<div class="card">
-				<div class="card-header fas fa-compact-disc fa-4x"></div>
+				<div class="card-header fas fa-compact-disc fa-2x"></div>
 				<div class="card-body">
 					<h5 class="card-title">ＤＪ</h5>
 					<p class="card-text">製作中</p>
@@ -83,7 +103,7 @@
 		</div>
 		<div class="col-sm-2">
 			<div class="card">
-				<div class="card-header fas fa-calendar-alt fa-4x"></div>
+				<div class="card-header fas fa-calendar-alt fa-2x"></div>
 				<div class="card-body">
 					<h5 class="card-title">活動</h5>
 					<p class="card-text">製作中</p>
