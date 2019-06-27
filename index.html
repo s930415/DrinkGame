@@ -5,7 +5,8 @@
 		<title>酒樂｜夜生活官網｜DrinkGame</title>
 		<meta name="keywords" content="喝酒,遊戲,酒吧,調酒,夜店,跳舞,夜生活,調酒,雞尾酒,音樂祭,活動,DJ,Club,Drink,Alcohol,Cocktail,Dance,Music,Bar" />
 		<meta name="description" content="喝玩樂與夜生活畫上等號，提供樂客們夜店位置營業時間等資訊，各個酒吧調酒營業時間等消息及各類音樂祭活動消息，甚至是地下音樂活動的集散地．在此還有樂友們在娛樂時小遊戲分享，各ＤＪ的資訊及曲風推薦，希望各位樂友在此有一片天">
-        <link rel="Shortcut Icon" type="image/x-icon" href="http://drink-game.ddns.net/icon.ico" />
+		<link rel="Shortcut Icon" type="image/x-icon" href="http://drink-game.ddns.net/icon.ico" />
+		<link href="css/reset.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link href="css/main.css" rel="stylesheet">
@@ -13,7 +14,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/parallax.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
         
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -35,7 +36,16 @@
     </head>
     <body>
     <header>
-    </header>
+	</header>
+	<div class="content">
+		<div class="content-left"></div>
+		<div class="content-right">
+			<div id="parallax-content">
+			</div>
+		</div>
+	</div>
+
+
 	<div class="row" hidden>
 		<div class="col-sm-2">
 			<div class="card">
@@ -88,8 +98,6 @@
 			</div>
 		</div>
         </div>
-        <script>
-            $('header').load('header.html');
-        </script>
+        <script src="js/init.js"></script>
     </body>
 </html>

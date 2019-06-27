@@ -13,8 +13,10 @@ function shake (){
 
 function remove(){
     if(dices.length === 0 ){
+        navigator.vibrate(800);
         dices = $('i');
     }else{
+        navigator.vibrate(200,10,200);
         dices.splice(0,1);
     }
 }
